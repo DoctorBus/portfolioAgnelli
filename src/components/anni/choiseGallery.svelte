@@ -4,11 +4,16 @@
 </script>
 
 <div class="gallery">
-    <AnnoButton />
-    <AnnoButton />
-    <AnnoButton />
-    <AnnoButton />
-    <AnnoButton />
+    <AnnoButton image="https://corsi.tecnicadellascuola.it/wp-content/uploads/2020/03/Scienze-naturali.jpg"
+                anno="2020/21"/>
+    <AnnoButton image="https://corsi.tecnicadellascuola.it/wp-content/uploads/2020/03/Scienze-naturali.jpg"
+                anno="2021/22"/>
+    <AnnoButton image="https://corsi.tecnicadellascuola.it/wp-content/uploads/2020/03/Scienze-naturali.jpg"
+                anno="2020/21" />
+    <AnnoButton   image="https://corsi.tecnicadellascuola.it/wp-content/uploads/2020/03/Scienze-naturali.jpg"
+                anno="2020/21"/>
+    <AnnoButton image="https://corsi.tecnicadellascuola.it/wp-content/uploads/2020/03/Scienze-naturali.jpg"
+                anno="2020/21"/>
 </div>
 
 <style>

@@ -1,13 +1,14 @@
 <script>
-
+    export let image;
+    export let anno;
 </script>
 
-<div class="card" style="background-image: url(https://corsi.tecnicadellascuola.it/wp-content/uploads/2020/03/Scienze-naturali.jpg);">
-    <h1>Anno - 2020/21</h1>
-    <a href="../">Vedi anno  &#10143;</a>
+<div class="card" style="background-image: url({image});">
+    <h1>Anno - {anno}</h1>
+    <a href="../{anno.replace("/", "_")}">Vedi anno  &#10143;</a>
 </div>
 
-<style>
+<style> 
     .card {
         width: 30vw;
         background-color: red;
@@ -17,6 +18,7 @@
         text-align: center;
         display: grid;
         grid-template-rows: 70% 30%;
+        border: 1px solid grey;
     }
 
     .card a {
