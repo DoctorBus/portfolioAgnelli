@@ -11,7 +11,6 @@
 <style> 
     .card {
         width: 30vw;
-        background-color: red;
         height: 20vh;
         margin: 0px auto 0;
         padding: 20px;
@@ -19,6 +18,9 @@
         display: grid;
         grid-template-rows: 70% 30%;
         border: 1px solid grey;
+        color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .card a {
@@ -31,6 +33,14 @@
         margin: 0px auto 0;
         border: 3px solid black;
         transition: .5s;
+    }
+
+    .card h1 {
+        width: fit-content;
+        height: fit-content;
+        margin: 0px auto 0;
+        background-color: rgba(44, 44, 44, 0.562);
+        padding: 10px;
     }
 
     .card a:hover {

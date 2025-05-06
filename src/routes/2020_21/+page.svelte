@@ -61,7 +61,7 @@
     .background {
         position: absolute;
         inset: 0;
-        background-image: url("https://corsi.tecnicadellascuola.it/wp-content/uploads/2020/03/Scienze-naturali.jpg");
+        background-image: url("https://vaccinarsincampania.org/assets/uploads/images/covers/coronavirus.jpg");
         background-size: cover;
         background-position: center;
         z-index: 0;
@@ -70,7 +70,7 @@
     .content {
         position: relative;
         z-index: 1;
-        background: rgba(255, 255, 255, 0.2); /* semi-trasparente */
+        background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         padding: 2rem;

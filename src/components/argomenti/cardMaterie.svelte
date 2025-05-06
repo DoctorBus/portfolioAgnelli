@@ -4,9 +4,22 @@
     export let descr;
     export let tipo = "img";
     export let ctx;
+    export let width;
+    let coloriCard = {
+        "Scienza della terra" : "rgba(0, 0, 255, 0.5)",      
+        "Informatica": "rgba(0, 128, 0, 0.5)",               
+        "Italiano": "rgba(255, 0, 0, 0.5)",                  
+        "Diritto ed economia": "rgba(255, 255, 0, 0.5)",     
+        "Storia": "rgba(165, 42, 42, 0.5)",                  
+        "Chimica": "rgba(128, 0, 128, 0.5)",                 
+        "Fisica": "rgba(128, 128, 128, 0.5)",                
+        "Biologia": "rgba(173, 255, 47, 0.5)",              
+        "Inglese": "rgba(0, 193, 207, 0.5)",                
+        "Sistemi e reti": "rgba(32, 178, 170, 0.5)"         
+    }   
 </script>
 
-<div class="card">
+<div class="card" style="background-color: {coloriCard[materia]};">
     <h1>{titolo}</h1>
     <div class="info">
         {#if tipo == "pdf"}
@@ -16,8 +29,10 @@
                 <source src="{ctx}" type="audio/mpeg">
                 Your browser does not support the audio tag.
             </audio>
+        {:else if tipo == "video"}
+            <iframe src="{ctx}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         {:else}
-            <img src="{ctx}" alt="">
+            <img src="{ctx}" alt="" style="width: {width}vw">
         {/if}
         <p>{descr}</p>
     </div>
@@ -27,10 +42,11 @@
 <style>
     .card {
         margin: 20px auto 0;
-        width: 40vw;
-        background-color: rgba(58, 58, 58, 0.507);
+        width: 50vw;
+        background-color: rgba(0, 193, 207, 0.4);
         padding: 20px;
         min-height: 50vh;
+        max-height: 80vh;
         color: white;
         border: 1px solid grey;
         display: grid;
@@ -47,9 +63,10 @@
         gap: 20px;
     }
 
-    .card img, object, audio{
+    .card img, object, audio, iframe{
         height: 100%;
         width: 100%;
+        margin: 0px auto 0;
     }
 
 
