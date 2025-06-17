@@ -1,9 +1,13 @@
+<script>
+    import { base } from '$app/paths';    
+</script>
+
 <div class="topbar">
     <div class="container">
         <h1>Portfolio di Ed. Civica</h1>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/anni">Anni</a></li>
+            <li><a href="{base}/">Home</a></li>
+            <li><a href="{base}/anni">Anni</a></li>
         </ul>
     </div>
 </div>
