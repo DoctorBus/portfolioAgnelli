@@ -1,6 +1,10 @@
+<script>
+    import { base } from '$app/paths';    
+</script>
+
 <div class="presentation">
     <div class="img-box">
-        <img src="imgs/pfp/pfp.jpeg" alt="">
+        <img src="{base}/imgs/pfp/pfp.jpeg" alt="">
     </div>
     <div class="info">
         <div class="contenuto">
