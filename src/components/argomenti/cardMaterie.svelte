@@ -1,4 +1,6 @@
 <script>
+    import { base } from '$app/paths';    
+
     export let titolo;
     export let materia;
     export let descr;
