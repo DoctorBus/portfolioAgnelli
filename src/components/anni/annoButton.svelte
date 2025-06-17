@@ -1,11 +1,13 @@
 <script>
+    import { base } from "$app/paths";
+
     export let image;
     export let anno;
 </script>
 
 <div class="card" style="background-image: url({image});">
     <h1>Anno - {anno}</h1>
-    <a href="../{anno.replace("/", "_")}">Vedi anno  &#10143;</a>
+    <a href="{base}/{anno.replace("/", "_")}">Vedi anno  &#10143;</a>
 </div>
 
 <style> 
