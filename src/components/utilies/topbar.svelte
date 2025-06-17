@@ -2,7 +2,7 @@
     <div class="container">
         <h1>Portfolio di Ed. Civica</h1>
         <ul>
-            <li><a href="../">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/anni">Anni</a></li>
         </ul>
     </div>

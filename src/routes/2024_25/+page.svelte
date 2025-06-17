@@ -22,6 +22,12 @@
                     descr="Con la professoressa Emanuela Aruzza abbiamo svolto un lavoro individuale ricreando il sito 1522, dedicato alla lotta contro la violenza sulle donne, in una versione funzionante."
                     ctx="pdf/Capolavoro1522Smal.pdf"
                     tipo="pdf"/>
+
+    <CardMaterie titolo="Unessay"
+                materia="Inglese"
+                descr="Con il professor Daniel De Santis abbiamo affrontato il tema della guerra tramite due poesie di Wilfred Owen e Rupert Brooke. Dopo la lettura, abbiamo dovuto creare un saggio in cui spiegavamo la nostra visione della guerra."
+                ctx="pdf/Unessay_war.pdf"
+                tipo="pdf"/>
     
     <Footerbar />
     </div>
